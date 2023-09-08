@@ -1,8 +1,11 @@
 /******** GLOBAL STYLES ********/
+html {
+  font-size: 16px;
+}
 
 body {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
   color: #000;
 }
 
@@ -10,44 +13,52 @@ h1,
 h2,
 h3,
 h4 {
-  text-transform: uppercase;
-  font-weight: 700;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 h1 {
-  font-size: 30px;
+	font-size: 1.875em;
 }
 
 h2 {
-  font-size: 24px;
+	font-size: 1.5em;
 }
 
 h3 {
-  font-size: 20px;
+	font-size: 1.25em;
 }
 
 h4 {
-  font-size: 12px;
+	font-size: .75em;
 }
 
 p {
-  font-size: 16px;
-  line-height: 36px;
-
+	font-size: 1rem;
+	line-height: 36px;
 }
 
 .content-wrapper {
-  margin: 0 auto;
-  overflow: auto;
-  width: 1200px;
+  max-width: 1200px;
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 /******** HEADER STYLES ********/
+header {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+}
 header h1 {
-  float: left;
-  width: 300px;
+  width: 100%;
   margin: 0;
-  padding: 36px 0;
+  padding: 38px 0 20px;
+  border-bottom: 3px solid #77a466;
 }
 
 header h1 span {
@@ -55,23 +66,23 @@ header h1 span {
 }
 
 header nav {
-  float: right;
-  width: 300px;
-  padding: 44px 0;
+  /*width: 300px;*/
+  padding: 20px 0;
 }
 
 header nav ul {
   margin: 0;
   padding: 0;
-  text-align: right;
+  
 }
 
 header nav ul li {
-  display: inline-block;
+  width: 100%;
+  list-style-type: none;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 0 10px;
+  padding: 10px 0;
 }
 
 header nav ul li a {
@@ -80,10 +91,19 @@ header nav ul li a {
 }
 
 /********  MAIN STYLES ********/
+.top-section,
+.bottom-section {
+    display: flex;
+  justify-content: center;
+}
+
+
 /******** TOP SECTION ********/
 .main-image img {
   border-top: 3px solid #77a466;
   border-bottom: 3px solid #77a466;
+
+  width: 100%;
 }
 
 .main-title h2 {
@@ -100,23 +120,23 @@ header nav ul li a {
 .section-one,
 .section-two,
 .section-three {
-  float: left;
+  width: 100%;
   box-sizing: border-box;
   padding: 0 40px;
 }
 
 .section-one {
-  width: 350px;
+  /* width: 350px; */
 }
 
 .section-two {
-  width: 500px;
+  /* width: 500px; */
   border-right: 5px solid #eee;
   border-left: 5px solid #eee;
 }
 
 .section-three {
-  width: 350px;
+  /* width: 350px; */
 }
 
 .bottom-section h3 {
@@ -138,11 +158,14 @@ header nav ul li a {
 footer {
   text-align: center;
   margin-top: 8px;
+
+    display: flex;
+  justify-content: center;
 }
 
 footer span {
-  font-family: "Galada", cursive;
+  font-family: "Gochi Hand", cursive;
   text-transform: lowercase;
   color: #45610e;
-  font-size: 14px;
+  font-size: 1.2rem;
 }
