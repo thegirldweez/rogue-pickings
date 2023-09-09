@@ -13,29 +13,29 @@ h1,
 h2,
 h3,
 h4 {
-	text-transform: uppercase;
-	font-weight: 700;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 h1 {
-	font-size: 1.875em;
+  font-size: 1.875em;
 }
 
 h2 {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h3 {
-	font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 h4 {
-	font-size: .75em;
+  font-size: 0.75em;
 }
 
 p {
-	font-size: 1rem;
-	line-height: 36px;
+  font-size: 1rem;
+  line-height: 36px;
 }
 
 .content-wrapper {
@@ -73,7 +73,6 @@ header nav {
 header nav ul {
   margin: 0;
   padding: 0;
-  
 }
 
 header nav ul li {
@@ -93,10 +92,9 @@ header nav ul li a {
 /********  MAIN STYLES ********/
 .top-section,
 .bottom-section {
-    display: flex;
+  display: flex;
   justify-content: center;
 }
-
 
 /******** TOP SECTION ********/
 .main-image img {
@@ -113,8 +111,8 @@ header nav ul li a {
 
 /******** BOTTOM SECTION ********/
 .bottom-section .content-wrapper {
-  border-top: 5px solid #eee;
-  border-bottom: 5px solid #eee;
+  border-top: 5px solid #e7e7e7;
+  border-bottom: 5px solid #e7e7e7;
 }
 
 .section-one,
@@ -131,8 +129,8 @@ header nav ul li a {
 
 .section-two {
   /* width: 500px; */
-  border-right: 5px solid #eee;
-  border-left: 5px solid #eee;
+  border-top: 5px solid #e7e7e7;
+  border-bottom: 5px solid #e7e7e7;
 }
 
 .section-three {
@@ -159,7 +157,7 @@ footer {
   text-align: center;
   margin-top: 8px;
 
-    display: flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -168,4 +166,68 @@ footer span {
   text-transform: lowercase;
   color: #45610e;
   font-size: 1.2rem;
+}
+
+/********** breakpoints **********/
+
+@media all and (min-width: 768px) {
+  /* Tablet styles here */
+  .bottom-section .content-wrapper {
+    justify-content: space-evenly;
+    border-top: 5px solid #e7e7e7;
+    border-bottom: 5px solid #e7e7e7;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40px;
+  }
+
+  .section-one {
+    width: 30%;
+  }
+
+  .section-two {
+    width: 40%;
+    border: none;
+    border-left: 5px solid #e7e7e7;
+    border-right: 5px solid #e7e7e7;
+    padding: 0 30px;
+  }
+
+  .section-three {
+    width: 30%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  /* Desktop styles here */
+  body {
+    font-size: 1em;
+  }
+
+header .content-wrapper {
+  padding: 25px 0;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  text-align: left;
+  width: 30%;
+  padding: 0;
+  border-bottom: none;
+}
+header nav {
+  width: 21%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
 }
